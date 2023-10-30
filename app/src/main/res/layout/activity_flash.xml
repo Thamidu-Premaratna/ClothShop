@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/beige"
+    tools:context=".FlashActivity">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="flash"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/flashscreen" />
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flash_main"
+        android:textColor="@color/black"
+        android:layout_marginTop="510dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flash_sub"
+        android:textColor="@color/gray"
+        android:layout_marginTop="600dp"
+        android:textStyle="normal"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/mainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="680dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="40dp"
+        android:text="@string/flash_slider">
+
+    </Button>
+</RelativeLayout>
