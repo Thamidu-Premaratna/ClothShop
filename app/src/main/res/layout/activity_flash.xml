@@ -13,41 +13,61 @@
         android:id="@+id/bgImage"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
         android:contentDescription="flash"
         android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
         app:srcCompat="@drawable/flashscreen" />
 
     <TextView
         android:id="@+id/mainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="457dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="199dp"
+        android:fontFamily="sans-serif"
         android:text="@string/flash_main"
         android:textColor="@color/black"
-        android:layout_marginTop="510dp"
-        android:textStyle="bold"
         android:textSize="30sp"
-        android:fontFamily="sans-serif"
-        android:layout_centerHorizontal="true"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/subText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="535dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="140dp"
+        android:fontFamily="sans-serif"
         android:text="@string/flash_sub"
         android:textColor="@color/gray"
-        android:layout_marginTop="600dp"
-        android:textStyle="normal"
         android:textSize="22sp"
-        android:fontFamily="sans-serif"
-        android:layout_centerHorizontal="true"/>
+        android:textStyle="normal" />
+
     <Button
         android:id="@+id/mainBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="680dp"
-        android:paddingVertical="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="603dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="80dp"
         android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
         android:text="@string/flash_slider">
 
     </Button>
