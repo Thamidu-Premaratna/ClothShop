@@ -5,4 +5,12 @@
     <string name="flash_sub">\t\t\t\t\t\tElevate Your style, \nFeel the Pulse of Fashion!</string>
     <string name="flash_slider">Get started</string>
     <!--    Flash screen text: end -->
+
+    <!--    Login screen text: start -->
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_note_1">Let’s Sign You In</string>
+    <string name="welcome_note_2">Welcome back, you’ve been missed!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <!--    Login screen text: end -->
 </resources>
