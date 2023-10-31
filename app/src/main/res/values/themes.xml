@@ -6,6 +6,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+        <item name="fontFamily">sans-serif</item>
     </style>
 
     <style name="Theme.ClothShop" parent="Base.Theme.ClothShop" />
