@@ -8,9 +8,18 @@
 
     <!--    Login screen text: start -->
     <string name="sign_in">Sign In</string>
-    <string name="welcome_note_1">Let’s Sign You In</string>
-    <string name="welcome_note_2">Welcome back, you’ve been missed!</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="sign_in_note_1">Let’s Sign You In</string>
+    <string name="sign_in_note_2">Welcome back, you’ve been missed!</string>
+    <string name="sign_in_email">Email</string>
+    <string name="sign_in_password">Password</string>
     <!--    Login screen text: end -->
+
+    <!--    sign up screen text: start -->
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_note_1">Getting Started</string>
+    <string name="sign_up_note_2">Creat an account to contiunued</string>
+    <string name="sign_up_name">Name</string>
+    <string name="sign_up_email">Email</string>
+    <string name="sign_up_password">Password</string>
+    <!--    sign up screen text: end -->
 </resources>
