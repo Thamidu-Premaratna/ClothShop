@@ -9,7 +9,7 @@
 
     <!--    Login screen text: start -->
     <string name="sign_in">Sign In</string>
-    <string name="welcome_note_1">Let’s Sign You In</string>
+    <string name="welcome_note_1">Let You Sign In</string>
     <string name="welcome_note_2">Welcome back, you’ve been missed!</string>
     <string name="email">Email</string>
     <string name="password">Password</string>  
@@ -22,7 +22,7 @@
     <!--    Sign up screen text: start -->
     <string name="sign_up">Sign Up</string>
     <string name="sign_up_note_1">Getting Started</string>
-    <string name="sign_up_note_2">Creat an account to contiunued</string>
+    <string name="sign_up_note_2">Create an account to continued</string>
     <string name="sign_up_name">Name</string>
     <string name="sign_up_email">Email</string>
     <string name="sign_up_password">Password</string>
@@ -35,4 +35,18 @@
     <string name="productViewDescription">Short dress in soft cotton jersey with decorative buttons down the front and a wide, frill-trimmed square neckline with concealed elastication. Elasticated seam under the bust and short puff sleeves with a small frill trim.</string>
     <string name="productViewAddBtn">Add to Bag</string>
     <!--    Product view screen text: end -->
+
+    <!--    Home screen text: start -->
+    <string name="search">search</string>
+    <string name="categories">Categories</string>
+    <string name="profile">Profile</string>
+    <string name="bag">Bag</string>
+    <!--    Home screen text: end -->
+
+    <!--    Bottom nav bar screen text: start -->
+    <string name="nav_home">Home</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_bag">Bag</string>
+    <!--    Bottom nav bar text: end -->
 </resources>
