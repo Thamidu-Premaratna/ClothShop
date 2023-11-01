@@ -10,10 +10,10 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="202dp"
-        android:layout_height="50dp"
+        android:layout_height="49dp"
         android:fontFamily="@font/montserrat_light"
         android:gravity="right"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,22 +27,22 @@
         android:id="@+id/textView2"
         android:layout_width="312dp"
         android:layout_height="61dp"
-        android:gravity="center"
-        android:text="Let’s Sign You In"
-        android:textSize="24sp"
         android:fontFamily="@font/montserrat_light"
+        android:gravity="center"
+        android:text="Getting Started"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
+        app:layout_constraintVertical_bias="0.182" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome back, you’ve been missed!"
+        android:text="Create an account to continued"
         android:fontFamily="@font/montserrat_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +69,22 @@
         app:layout_constraintVertical_bias="0.416" />
 
     <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="301dp"
+        android:layout_height="46dp"
+        android:background="@drawable/textborder"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_light"
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <EditText
         android:id="@+id/password"
         android:layout_width="301dp"
         android:layout_height="46dp"
@@ -81,23 +97,23 @@
         android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.508" />
-
+        app:layout_constraintVertical_bias="0.624" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="349dp"
         android:layout_height="55dp"
         android:fontFamily="@font/montserrat_light"
-        android:text="Login"
+        android:text="Sign Up"
         app:backgroundTint="#D3B398"
         app:iconTint="#D3B398"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656" />
+        app:layout_constraintVertical_bias="0.772" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
