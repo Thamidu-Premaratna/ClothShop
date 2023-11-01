@@ -13,10 +13,16 @@
         android:theme="@style/Theme.ClothShop"
         tools:targetApi="31">
         <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MyBag"
+            android:exported="false" />
+        <activity
             android:name=".activity_login"
             android:exported="false" />
         <activity
-            android:name=".activity_signup"
+            android:name=".SignUp"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
