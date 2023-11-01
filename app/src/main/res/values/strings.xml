@@ -35,4 +35,18 @@
     <string name="productViewDescription">Short dress in soft cotton jersey with decorative buttons down the front and a wide, frill-trimmed square neckline with concealed elastication. Elasticated seam under the bust and short puff sleeves with a small frill trim.</string>
     <string name="productViewAddBtn">Add to Bag</string>
     <!--    Product view screen text: end -->
+
+    <!--    Home screen text: start -->
+    <string name="search">search</string>
+    <string name="categories">Categories</string>
+    <string name="profile">Profile</string>
+    <string name="bag">Bag</string>
+    <!--    Home screen text: end -->
+
+    <!--    Bottom nav bar screen text: start -->
+    <string name="nav_home">Home</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_bag">Bag</string>
+    <!--    Bottom nav bar text: end -->
 </resources>
