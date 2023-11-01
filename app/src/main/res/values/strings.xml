@@ -1,8 +1,38 @@
 <resources>
     <string name="app_name">ClothShop</string>
+  
     <!--    Flash screen text: start -->
     <string name="flash_main">\t\tPULSE \nFASHION</string>
     <string name="flash_sub">\t\t\t\t\t\tElevate Your style, \nFeel the Pulse of Fashion!</string>
     <string name="flash_slider">Get started</string>
     <!--    Flash screen text: end -->
+
+    <!--    Login screen text: start -->
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_note_1">Let’s Sign You In</string>
+    <string name="welcome_note_2">Welcome back, you’ve been missed!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>  
+    <string name="sign_in_note_1">Let’s Sign You In</string>
+    <string name="sign_in_note_2">Welcome back, you’ve been missed!</string>
+    <string name="sign_in_email">Email</string>
+    <string name="sign_in_password">Password</string>
+    <!--    Login screen text: end -->
+
+    <!--    Sign up screen text: start -->
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_note_1">Getting Started</string>
+    <string name="sign_up_note_2">Creat an account to contiunued</string>
+    <string name="sign_up_name">Name</string>
+    <string name="sign_up_email">Email</string>
+    <string name="sign_up_password">Password</string>
+    <!--    Sign up screen text: end -->
+  
+    <!--    Product view screen text: start -->
+    <string name="productViewTitle"><![CDATA[H & M]]></string>
+    <string name="productViewPrice">20 $</string>
+    <string name="productViewRating">4.8</string>
+    <string name="productViewDescription">Short dress in soft cotton jersey with decorative buttons down the front and a wide, frill-trimmed square neckline with concealed elastication. Elasticated seam under the bust and short puff sleeves with a small frill trim.</string>
+    <string name="productViewAddBtn">Add to Bag</string>
+    <!--    Product view screen text: end -->
 </resources>
