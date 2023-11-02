@@ -17,7 +17,7 @@ public class FlashActivity extends AppCompatActivity {
         mBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-              startActivity(new Intent(FlashActivity.this,HomeActivity.class));
+              startActivity(new Intent(FlashActivity.this,HomeFragment.class));
             }
         });
     }
