@@ -1,6 +1,7 @@
 package com.app.clothshop;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +18,7 @@ public class FlashActivity extends AppCompatActivity {
         mBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-              startActivity(new Intent(FlashActivity.this,HomeFragment.class));
+              startActivity(new Intent(FlashActivity.this,HomeActivity.class));
             }
         });
     }
