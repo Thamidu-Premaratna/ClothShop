@@ -30,6 +30,7 @@
             android:textAlignment="center"
             android:layout_marginTop="10dp"
             android:text="women"
+            android:layout_gravity="center"
             android:textColor="@color/black"
             android:textSize="15sp"/>
         

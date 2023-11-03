@@ -14,13 +14,13 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements UpdateVerticalRec{
 
     RecyclerView homeHorizontalRec, homeVerticalRec;
-    List<HomeHorModel> homeHorModelList;
+    ArrayList<HomeHorModel> homeHorModelList;
     HomeHorAdapter homeHorAdapter;
 
-    List<HomeVerModel> homeVerModelList;
+    ArrayList<HomeVerModel> homeVerModelList;
     HomeVerAdapter homeVerAdapter;
 
     @Override
@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment {
         homeHorModelList.add(new HomeHorModel(R.drawable.baseline_house_24,"women"));
         homeHorModelList.add(new HomeHorModel(R.drawable.baseline_house_24,"women"));
 
-        homeHorAdapter = new HomeHorAdapter(getActivity(),homeHorModelList);
+        homeHorAdapter = new HomeHorAdapter(this,getActivity(),homeHorModelList);
         homeHorizontalRec.setAdapter(homeHorAdapter);
         homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false));
         homeHorizontalRec.setHasFixedSize(true);
@@ -48,22 +48,18 @@ public class HomeFragment extends Fragment {
         ///vertical RecycleView
         homeVerModelList = new ArrayList<>();
 
-        homeVerModelList.add(new HomeVerModel(R.drawable.women_1,"cloth1","5.0","25$","Green"));
-        homeVerModelList.add(new HomeVerModel(R.drawable.women_1,"cloth1","5.0","25$","Green"));
-        homeVerModelList.add(new HomeVerModel(R.drawable.women_1,"cloth1","5.0","25$","Green"));
-        homeVerModelList.add(new HomeVerModel(R.drawable.women_1,"cloth1","5.0","25$","Green"));
-        homeVerModelList.add(new HomeVerModel(R.drawable.women_1,"cloth1","5.0","25$","Green"));
-        homeVerModelList.add(new HomeVerModel(R.drawable.women_1,"cloth1","5.0","25$","Green"));
-        homeVerModelList.add(new HomeVerModel(R.drawable.women_1,"cloth1","5.0","25$","Green"));
-        homeVerModelList.add(new HomeVerModel(R.drawable.women_1,"cloth1","5.0","25$","Green"));
-
         homeVerAdapter = new HomeVerAdapter(getActivity(),homeVerModelList);
         homeVerticalRec.setAdapter(homeVerAdapter);
         homeVerticalRec.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.VERTICAL,false));
-        homeVerticalRec.setHasFixedSize(true);
-        homeVerticalRec.setNestedScrollingEnabled(false);
 
 
         return root;
+    }
+
+    @Override
+    public void callBack(int position, ArrayList<HomeVerModel> list) {
+        homeVerAdapter = new HomeVerAdapter(getContext(),list);
+        homeVerAdapter.notifyDataSetChanged();
+        homeVerticalRec.setAdapter(homeVerAdapter);
     }
 }
