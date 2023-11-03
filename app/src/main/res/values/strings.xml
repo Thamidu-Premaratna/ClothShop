@@ -17,6 +17,7 @@
     <string name="sign_in_note_2">Welcome back, you’ve been missed!</string>
     <string name="sign_in_email">Email</string>
     <string name="sign_in_password">Password</string>
+    <string name="fp_text">Forgot your password? -></string>
     <!--    Login screen text: end -->
 
     <!--    Sign up screen text: start -->
@@ -26,6 +27,7 @@
     <string name="sign_up_name">Name</string>
     <string name="sign_up_email">Email</string>
     <string name="sign_up_password">Password</string>
+    <string name="ar_text">Already have an account -></string>
     <!--    Sign up screen text: end -->
 
     <!--    Product view screen text: start -->

@@ -1,5 +1,6 @@
 package com.app.clothshop;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -54,6 +55,7 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec{
 
 
         return root;
+
     }
 
     @Override
@@ -62,4 +64,5 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec{
         homeVerAdapter.notifyDataSetChanged();
         homeVerticalRec.setAdapter(homeVerAdapter);
     }
+
 }
