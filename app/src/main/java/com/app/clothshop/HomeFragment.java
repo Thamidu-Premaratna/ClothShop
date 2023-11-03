@@ -36,9 +36,10 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec{
         ///Horizontal RecycleView
         homeHorModelList = new ArrayList<>();
 
-        homeHorModelList.add(new HomeHorModel(R.drawable.baseline_house_24,"women"));
-        homeHorModelList.add(new HomeHorModel(R.drawable.baseline_house_24,"women"));
-        homeHorModelList.add(new HomeHorModel(R.drawable.baseline_house_24,"women"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.men_top,"men"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.women_top,"women"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.kid_top,"kids"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.sport_top,"sport"));
 
         homeHorAdapter = new HomeHorAdapter(this,getActivity(),homeHorModelList);
         homeHorizontalRec.setAdapter(homeHorAdapter);

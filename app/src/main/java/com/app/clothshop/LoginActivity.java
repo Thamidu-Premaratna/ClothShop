@@ -59,10 +59,37 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
-        ss.setSpan(clickableSpan1, 0, 25, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(clickableSpan1, 0, 24, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         textView.setText(ss);
         textView.setMovementMethod(LinkMovementMethod.getInstance());
+
+        //clickable text
+        TextView textView1 = findViewById(R.id.ah_text);
+
+        String text1 = "Don't have an account ->";
+
+        SpannableString ss1 = new SpannableString(text1);
+
+        ClickableSpan clickableSpan2 = new ClickableSpan() {
+            @Override
+            public void onClick(View widget) {
+                Intent intent = new Intent(LoginActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void updateDrawState(TextPaint ds) {
+                super.updateDrawState(ds);
+                ds.setColor(Color.RED);
+                ds.setUnderlineText(false);
+            }
+        };
+
+        ss1.setSpan(clickableSpan1, 0, 23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView1.setText(ss1);
+        textView1.setMovementMethod(LinkMovementMethod.getInstance());
 
 
         //back button

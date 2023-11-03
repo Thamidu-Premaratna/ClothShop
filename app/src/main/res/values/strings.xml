@@ -18,6 +18,7 @@
     <string name="sign_in_email">Email</string>
     <string name="sign_in_password">Password</string>
     <string name="fp_text">Forgot your password? -></string>
+    <string name="dh_text">Don’t have an account -></string>
     <!--    Login screen text: end -->
 
     <!--    Sign up screen text: start -->

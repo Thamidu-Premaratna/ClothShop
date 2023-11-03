@@ -20,7 +20,7 @@
             android:id="@+id/hor_img"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/baseline_person_2_24"
+            android:src="@drawable/men_top"
             android:layout_gravity="center"/>
         
         <TextView
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
-            android:text="women"
+            android:text="Men"
             android:layout_gravity="center"
             android:textColor="@color/black"
             android:textSize="15sp"/>
