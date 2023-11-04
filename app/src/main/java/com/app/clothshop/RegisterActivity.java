@@ -92,25 +92,21 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(this,"Enter Name", Toast.LENGTH_SHORT).show();
             return;
         }
-        closeKeyboard();
 
         if (TextUtils.isEmpty(userEmail)) {
             Toast.makeText(this,"Enter Email Address", Toast.LENGTH_SHORT).show();
             return;
         }
-        closeKeyboard();
 
         if (TextUtils.isEmpty(userPassword)) {
             Toast.makeText(this,"Enter Password", Toast.LENGTH_SHORT).show();
             return;
         }
-        closeKeyboard();
 
         if (userPassword.length() < 8){
             Toast.makeText(this,"Password too short", Toast.LENGTH_SHORT).show();
             return;
         }
-        closeKeyboard();
 
         auth.createUserWithEmailAndPassword(userEmail,userPassword)
                 .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
@@ -125,16 +121,9 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     }
                 });
-        closeKeyboard();
+
     }
 
-    private void closeKeyboard() {
-        View view = this.getCurrentFocus();
-        if (view != null) {
-            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-        }
-    }
     public void signin(View view) {
         startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
     }
