@@ -93,7 +93,7 @@ public class HomeActivity extends AppCompatActivity {
         txtProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
             }
         });
     }
