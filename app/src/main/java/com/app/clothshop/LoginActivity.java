@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
         ClickableSpan clickableSpan2 = new ClickableSpan() {
             @Override
             public void onClick(View widget) {
-                Intent intent = new Intent(LoginActivity.this, LoginActivity.class);
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
 
