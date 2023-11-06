@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- IM/2020/027 : start -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
@@ -14,8 +15,9 @@ tools:context=".LoginActivity">
         android:fillViewport="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-<TextView
-    android:id="@+id/signUp"
+    <!-- Sign In heading -->
+    <TextView
+    android:id="@+id/signIn"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:fontFamily="sans-serif"
@@ -30,7 +32,7 @@ tools:context=".LoginActivity">
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.066" />
 
-<TextView
+    <TextView
     android:id="@+id/text1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -45,7 +47,7 @@ tools:context=".LoginActivity">
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.221" />
 
-<TextView
+    <TextView
     android:id="@+id/text2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -61,7 +63,8 @@ tools:context=".LoginActivity">
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.362" />
 
-<EditText
+    <!-- Email Text Box -->
+    <EditText
     android:id="@+id/email"
     android:layout_width="312dp"
     android:layout_height="50dp"
@@ -75,7 +78,8 @@ tools:context=".LoginActivity">
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.464" />
 
-<EditText
+    <!-- Password Text Box -->
+    <EditText
     android:id="@+id/password"
     android:layout_width="312dp"
     android:layout_height="50dp"
@@ -107,8 +111,9 @@ tools:context=".LoginActivity">
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.636" />
 
+    <!-- Sign In button -->
     <Button
-        android:id="@+id/signupBtn"
+        android:id="@+id/signInBtn"
         android:layout_width="254dp"
         android:layout_height="54dp"
         android:background="@drawable/btn_bgc"
@@ -125,6 +130,7 @@ tools:context=".LoginActivity">
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.737" />
 
+    <!-- Back Button -->
     <Button
         android:id="@+id/back_btn"
         android:layout_width="69dp"
@@ -159,3 +165,4 @@ tools:context=".LoginActivity">
     </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- IM/2020/027 : end -->

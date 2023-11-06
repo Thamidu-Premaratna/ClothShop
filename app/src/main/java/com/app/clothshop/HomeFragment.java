@@ -12,11 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class HomeFragment extends Fragment implements UpdateVerticalRec{
+public class HomeFragment extends Fragment implements UpdateVerticalRec {
 
     RecyclerView homeHorizontalRec, homeVerticalRec;
     ArrayList<HomeHorModel> homeHorModelList;
@@ -26,7 +26,7 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec{
     HomeVerAdapter homeVerAdapter;
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater  inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_home, container, false);
@@ -34,39 +34,47 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec{
         homeHorizontalRec = root.findViewById(R.id.home_hor_rec);
         homeVerticalRec = root.findViewById(R.id.home_ver_rec);
 
-        ///Horizontal RecycleView
+        /// Horizontal RecyclerView
         homeHorModelList = new ArrayList<>();
+        homeHorModelList.add(new HomeHorModel(R.drawable.men_top, "men"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.women_top, "women"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.kid_top, "kids"));
+        homeHorModelList.add(new HomeHorModel(R.drawable.sport_top, "sport"));
 
-        homeHorModelList.add(new HomeHorModel(R.drawable.men_top,"men"));
-        homeHorModelList.add(new HomeHorModel(R.drawable.women_top,"women"));
-        homeHorModelList.add(new HomeHorModel(R.drawable.kid_top,"kids"));
-        homeHorModelList.add(new HomeHorModel(R.drawable.sport_top,"sport"));
-
-        homeHorAdapter = new HomeHorAdapter(this,getActivity(),homeHorModelList);
+        homeHorAdapter = new HomeHorAdapter(this, getActivity(), homeHorModelList);
         homeHorizontalRec.setAdapter(homeHorAdapter);
-        homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.HORIZONTAL,false));
+        homeHorizontalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.HORIZONTAL, false));
         homeHorizontalRec.setHasFixedSize(true);
         homeHorizontalRec.setNestedScrollingEnabled(false);
 
-        ///vertical RecycleView
+        /// Vertical RecyclerView
         homeVerModelList = new ArrayList<>();
 
-        homeVerAdapter = new HomeVerAdapter(getActivity(),homeVerModelList);
+        homeVerAdapter = new HomeVerAdapter(getActivity(), homeVerModelList);
         homeVerticalRec.setAdapter(homeVerAdapter);
-        homeVerticalRec.setLayoutManager(new LinearLayoutManager(getActivity(),RecyclerView.VERTICAL,false));
+        homeVerticalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false));
 
+        // Sign In Button Click Handling
+        Button signInButton = root.findViewById(R.id.signupBtn);
+        signInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle button click event
+                // Navigate to SignInActivity
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return root;
-
     }
 
     @Override
     public void callBack(int position, ArrayList<HomeVerModel> list) {
-        homeVerAdapter = new HomeVerAdapter(getContext(),list);
+        homeVerAdapter = new HomeVerAdapter(getContext(), list);
         homeVerAdapter.notifyDataSetChanged();
         homeVerticalRec.setAdapter(homeVerAdapter);
     }
-
 }
 
 //IM/2020/087 - Ended

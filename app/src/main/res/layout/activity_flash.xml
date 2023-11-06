@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- IM/2020/109 : start -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,6 +10,7 @@
     android:background="@color/beige"
     tools:context=".FlashActivity">
 
+    <!-- Background Image -->
     <ImageView
         android:id="@+id/bgImage"
         android:layout_width="fill_parent"
@@ -18,6 +20,7 @@
         android:adjustViewBounds="true"
         app:srcCompat="@drawable/flashscreen" />
 
+    <!-- Shop Name -->
     <TextView
         android:id="@+id/mainText"
         android:layout_width="wrap_content"
@@ -40,6 +43,8 @@
         android:textSize="22sp"
         android:fontFamily="sans-serif"
         android:layout_centerHorizontal="true"/>
+
+    <!-- Getting Started Button -->
     <Button
         android:id="@+id/mainBtn"
         android:layout_width="wrap_content"
@@ -52,3 +57,4 @@
 
     </Button>
 </RelativeLayout>
+    <!-- IM/2020/109 : end -->
