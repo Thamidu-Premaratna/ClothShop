@@ -93,20 +93,20 @@ public class HomeActivity extends AppCompatActivity {
         txtProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
             }
         });
     }
 
 
-    public void signin(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
-    }
-}
-
-//
 //    public void signin(View view) {
-//        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+//        Intent intent = new Intent(this, LoginActivity.class);
+//        startActivity(intent);
 //    }
 //}
+
+
+    public void signin(View view) {
+        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+    }
+}
