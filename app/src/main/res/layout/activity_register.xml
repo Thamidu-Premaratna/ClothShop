@@ -88,7 +88,7 @@
         android:layout_height="50dp"
         android:background="@drawable/edit_text_bg"
         android:hint="@string/sign_up_password"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,21 +99,53 @@
 
     <Button
         android:id="@+id/signupBtn"
+        android:layout_width="258dp"
+        android:layout_height="53dp"
         android:background="@drawable/btn_bgc"
-        app:backgroundTint="#D3B398"
-        android:layout_width="182dp"
-        android:layout_height="55dp"
         android:onClick="signup"
-        android:padding="15dp"
+        android:textSize="20dp"
         android:text="@string/sign_up"
         android:textAllCaps="false"
         android:textStyle="bold"
+        app:backgroundTint="#D3B398"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.84" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="69dp"
+        android:layout_height="51dp"
+        android:background="@drawable/back_arrow"
+        android:text="B"
+        android:textColor="@color/beige"
+        android:textSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/ah_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="sans-serif"
+        android:text="@string/ar_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

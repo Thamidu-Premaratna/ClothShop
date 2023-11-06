@@ -8,6 +8,12 @@ android:clipToPadding="true"
 android:background="@drawable/loginback"
 tools:context=".LoginActivity">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
 <TextView
     android:id="@+id/signUp"
     android:layout_width="wrap_content"
@@ -75,7 +81,7 @@ tools:context=".LoginActivity">
     android:layout_height="50dp"
     android:background="@drawable/edit_text_bg"
     android:hint="@string/sign_in_password"
-    android:inputType="numberPassword"
+    android:inputType="textPassword"
     android:padding="15dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
@@ -84,22 +90,72 @@ tools:context=".LoginActivity">
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.566" />
 
-<Button
-    android:id="@+id/signupBtn"
-    android:layout_width="182dp"
-    android:layout_height="55dp"
-    android:background="@drawable/btn_bgc"
-    android:onClick="signIn"
-    android:padding="15dp"
-    android:text="@string/sign_in"
-    android:textAllCaps="false"
-    android:textStyle="bold"
-    app:backgroundTint="@color/beige"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.497"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.698" />
+    <TextView
+        android:id="@+id/fp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="sans-serif"
+        android:text="@string/fp_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="254dp"
+        android:layout_height="54dp"
+        android:background="@drawable/btn_bgc"
+        android:onClick="signIn"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/beige"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="69dp"
+        android:layout_height="51dp"
+        android:background="@drawable/back_arrow"
+        android:textColor="@color/beige"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/ah_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/dh_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
