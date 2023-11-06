@@ -27,8 +27,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        getSupportActionBar().hide();
-
         auth = FirebaseAuth.getInstance();
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
@@ -90,7 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
     }
     public void signin(View view) {
-        startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
     }
 
 }
