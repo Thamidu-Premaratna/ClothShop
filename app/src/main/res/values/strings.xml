@@ -34,6 +34,8 @@
     <string name="productViewRating">4.8</string>
     <string name="productViewDescription">Short dress in soft cotton jersey with decorative buttons down the front and a wide, frill-trimmed square neckline with concealed elastication. Elasticated seam under the bust and short puff sleeves with a small frill trim.</string>
     <string name="productViewAddBtn">Add to Bag</string>
+    <string name="bagViewTitle">My Bag</string>
+    <string name="bagViewProductTitle">HM Dress</string>
     <!--    Product view screen text: end -->
 
     <!--    Home screen text: start -->
