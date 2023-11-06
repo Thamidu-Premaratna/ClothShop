@@ -1,3 +1,4 @@
+//IM/2020/022 -started
 package com.app.clothshop;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -110,3 +111,5 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(new Intent(HomeActivity.this, LoginActivity.class));
     }
 }
+
+//IM/2020/022- ended

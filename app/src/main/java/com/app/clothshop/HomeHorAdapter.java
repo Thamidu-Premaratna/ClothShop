@@ -1,3 +1,4 @@
+//IM/2020/022 - started
 package com.app.clothshop;
 
 import android.app.Activity;
@@ -149,3 +150,4 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
         }
     }
 }
+//IM/2020/022 - ended
