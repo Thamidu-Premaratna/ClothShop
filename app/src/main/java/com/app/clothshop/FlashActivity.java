@@ -1,3 +1,4 @@
+//IM/2020/109 - started
 package com.app.clothshop;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,3 +24,4 @@ public class FlashActivity extends AppCompatActivity {
         });
     }
 }
+//IM/2020/109 - stopped
