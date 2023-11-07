@@ -15,7 +15,6 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
-
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
@@ -27,6 +26,9 @@
             android:exported="false"
             android:label="@string/title_activity_category"
             android:theme="@style/Theme.ClothShop" />
+         <activity
+            android:name=".BagActivity"
+            android:exported="false" />
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
