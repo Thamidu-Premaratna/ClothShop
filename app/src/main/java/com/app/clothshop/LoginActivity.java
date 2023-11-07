@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
-        ss1.setSpan(clickableSpan1, 0, 23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss1.setSpan(clickableSpan2, 0, 23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         textView1.setText(ss1);
         textView1.setMovementMethod(LinkMovementMethod.getInstance());

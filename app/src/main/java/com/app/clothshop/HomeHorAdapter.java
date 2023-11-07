@@ -96,6 +96,8 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
                         homeVerModels.add(new HomeVerModel(R.drawable.k_b_ful, "Full Set","4.8","15$","Brown"));
                         homeVerModels.add(new HomeVerModel(R.drawable.k_g_full, "Full Set","4.5","20$","Green"));
                         homeVerModels.add(new HomeVerModel(R.drawable.k_b_full, "Full Set","4.8","22$","Blue"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.k_w_cloth, "Top","5.0","15$","White"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.k_b_ful, "Full Set","4.8","15$","Brown"));
 
                         updateVerticalRec.callBack(position,homeVerModels);
                     }
@@ -104,6 +106,8 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
 
                         homeVerModels.add(new HomeVerModel(R.drawable.s_b_full, "Full Set","5.0","25$","Blue"));
                         homeVerModels.add(new HomeVerModel(R.drawable.s_b_top, "Top","5.0","25$","Black"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.s_g_short, "Short","5.0","25$","Green"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.s_y_full, "Full Set","5.0","25$","Yellow"));
                         homeVerModels.add(new HomeVerModel(R.drawable.s_g_short, "Short","5.0","25$","Green"));
                         homeVerModels.add(new HomeVerModel(R.drawable.s_y_full, "Full Set","5.0","25$","Yellow"));
 
