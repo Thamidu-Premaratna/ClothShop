@@ -21,7 +21,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
     Button resetBtn;
     EditText email;
-    FirebaseAuth mAuth;
+    FirebaseAuth Auth;
     String resetEmail;
 
     @Override
@@ -32,7 +32,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         resetBtn = findViewById(R.id.resetBtn);
         email = findViewById(R.id.email);
 
-        mAuth = FirebaseAuth.getInstance();
+        Auth = FirebaseAuth.getInstance();
 
         resetBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +51,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     private void ResetPassword(){
         resetBtn.setVisibility(View.INVISIBLE);
 
-        mAuth.sendPasswordResetEmail(resetEmail).addOnSuccessListener(new OnSuccessListener<Void>() {
+        Auth.sendPasswordResetEmail(resetEmail).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
                 Toast.makeText(ForgotPasswordActivity.this,"Reset password link to the email", Toast.LENGTH_SHORT).show();

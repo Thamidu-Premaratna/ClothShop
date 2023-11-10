@@ -110,30 +110,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-//
-//        final ScrollView scrollView = findViewById(R.id.scrollView);
-//
-//        ViewTreeObserver.OnPreDrawListener onPreDrawListener = new ViewTreeObserver.OnPreDrawListener() {
-//            @Override
-//            public boolean onPreDraw() {
-//                Rect r = new Rect();
-//                scrollView.getWindowVisibleDisplayFrame(r);
-//                int screenHeight = scrollView.getHeight();
-//                int keypadHeight = screenHeight - r.bottom;
-//
-//                if (keypadHeight > screenHeight * 0.15) { // Adjust the threshold as needed
-//                    scrollView.scrollBy(0, keypadHeight);
-//                } else {
-//                    scrollView.scrollTo(0, 0);
-//                }
-//
-//                return true;
-//            }
-//        };
-//
-//        scrollView.getViewTreeObserver().addOnPreDrawListener(onPreDrawListener);
     }
-
 
     public void signIn(View view) {
 
