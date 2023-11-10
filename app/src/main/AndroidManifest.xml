@@ -16,20 +16,6 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CartActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CategoryActivity"
-            android:exported="false"
-            android:label="@string/title_activity_category"
-            android:theme="@style/Theme.ClothShop" />
-         <activity
-            android:name=".BagActivity"
-            android:exported="false" />
-        <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
         <activity
@@ -38,10 +24,6 @@
 
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".ProductViewActivity"
             android:exported="false" />
         <activity
             android:name=".FlashActivity"
