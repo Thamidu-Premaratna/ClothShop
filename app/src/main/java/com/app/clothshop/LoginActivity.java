@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
-        ss1.setSpan(clickableSpan2, 0, 23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss1.setSpan(clickableSpan2, 0, 24, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         textView1.setText(ss1);
         textView1.setMovementMethod(LinkMovementMethod.getInstance());
@@ -111,7 +111,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 //
-        final ScrollView scrollView = findViewById(R.id.scrollView);
+//        final ScrollView scrollView = findViewById(R.id.scrollView);
 //
 //        ViewTreeObserver.OnPreDrawListener onPreDrawListener = new ViewTreeObserver.OnPreDrawListener() {
 //            @Override
