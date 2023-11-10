@@ -16,7 +16,7 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
-public class HomeFragment extends Fragment implements UpdateVerticalRec {
+public class  HomeFragment extends Fragment implements UpdateVerticalRec {
 
     RecyclerView homeHorizontalRec, homeVerticalRec;
     ArrayList<HomeHorModel> homeHorModelList;

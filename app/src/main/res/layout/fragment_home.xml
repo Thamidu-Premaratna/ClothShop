@@ -30,7 +30,7 @@
             android:layout_marginBottom="16dp"/>
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/serachbar"
             android:layout_width="match_parent"
             android:layout_height="51dp"
             android:background="@drawable/edit_text_bg"
@@ -54,6 +54,8 @@
             android:layout_margin="16dp"/>
 
     </LinearLayout>
+
+
 
 
 </androidx.core.widget.NestedScrollView>

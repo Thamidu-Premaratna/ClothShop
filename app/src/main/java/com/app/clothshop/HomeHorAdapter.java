@@ -45,6 +45,8 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
         holder.imageView.setImageResource(list.get(position).getImage());
         holder.name.setText(list.get(position).getName());
 
+
+
         if(check){
             ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
             homeVerModels.add(new HomeVerModel(R.drawable.m_w_pullover1, "Pullover","4.9","25$","White"));
@@ -68,8 +70,8 @@ public class HomeHorAdapter extends RecyclerView.Adapter<HomeHorAdapter.ViewHold
 
                         ArrayList<HomeVerModel> homeVerModels = new ArrayList<>();
 
-                        homeVerModels.add(new HomeVerModel(R.drawable.m_w_pullover1, "Pullover","4.9","25$","White"));                        homeVerModels.add(new HomeVerModel(R.drawable.women_1, "cloth1","5.0","25$","Green"));
-                        homeVerModels.add(new HomeVerModel(R.drawable.m_b_pullover2, "Pullover","5.0","15$","Brown"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.m_w_pullover1, "Pullover","4.9","25$","White"));
+                        homeVerModels.add(new HomeVerModel(R.drawable.m_b_tshirt3, "T-shirt","4.8","20$","Blue"));
                         homeVerModels.add(new HomeVerModel(R.drawable.m_b_shirts1, "shirt","4.5","20$","Blue"));
                         homeVerModels.add(new HomeVerModel(R.drawable.m_r_shirts5, "shirt","4.8","22$","Red"));
                         homeVerModels.add(new HomeVerModel(R.drawable.m_w_tshirt5, "T-shirt","4.4","15$","White"));

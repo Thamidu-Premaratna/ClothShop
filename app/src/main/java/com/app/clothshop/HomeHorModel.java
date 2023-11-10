@@ -5,6 +5,8 @@ public class HomeHorModel {
      int image;
      String name;
 
+
+
     public HomeHorModel(int image, String name) {
         this.image = image;
         this.name = name;
