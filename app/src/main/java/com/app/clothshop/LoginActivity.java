@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -14,8 +15,10 @@ import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -87,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
-        ss1.setSpan(clickableSpan1, 0, 23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss1.setSpan(clickableSpan2, 0, 24, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         textView1.setText(ss1);
         textView1.setMovementMethod(LinkMovementMethod.getInstance());
@@ -106,6 +109,29 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//
+//        final ScrollView scrollView = findViewById(R.id.scrollView);
+//
+//        ViewTreeObserver.OnPreDrawListener onPreDrawListener = new ViewTreeObserver.OnPreDrawListener() {
+//            @Override
+//            public boolean onPreDraw() {
+//                Rect r = new Rect();
+//                scrollView.getWindowVisibleDisplayFrame(r);
+//                int screenHeight = scrollView.getHeight();
+//                int keypadHeight = screenHeight - r.bottom;
+//
+//                if (keypadHeight > screenHeight * 0.15) { // Adjust the threshold as needed
+//                    scrollView.scrollBy(0, keypadHeight);
+//                } else {
+//                    scrollView.scrollTo(0, 0);
+//                }
+//
+//                return true;
+//            }
+//        };
+//
+//        scrollView.getViewTreeObserver().addOnPreDrawListener(onPreDrawListener);
     }
 
 

@@ -34,6 +34,9 @@ public class HomeVerAdapter extends RecyclerView.Adapter<HomeVerAdapter.ViewHold
 
         holder.imageView.setImageResource(list.get(position).getImage());
         holder.name.setText(list.get(position).getName());
+        holder.color.setText(list.get(position).getColor());
+        holder.price.setText(list.get(position).getPrice());
+        holder.rating.setText(list.get(position).getRating());
 
     }
 

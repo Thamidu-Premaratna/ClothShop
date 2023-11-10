@@ -35,10 +35,11 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
+
         <activity
             android:name=".LoginActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustPan" />
+            android:exported="false" />
+
         <activity
             android:name=".ProductViewActivity"
             android:exported="false" />
@@ -51,6 +52,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
     </application>
 

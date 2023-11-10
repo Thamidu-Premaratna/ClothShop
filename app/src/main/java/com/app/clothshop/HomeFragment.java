@@ -12,11 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class HomeFragment extends Fragment implements UpdateVerticalRec {
+public class  HomeFragment extends Fragment implements UpdateVerticalRec {
 
     RecyclerView homeHorizontalRec, homeVerticalRec;
     ArrayList<HomeHorModel> homeHorModelList;
@@ -28,15 +28,12 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         homeHorizontalRec = root.findViewById(R.id.home_hor_rec);
         homeVerticalRec = root.findViewById(R.id.home_ver_rec);
 
-        ///Horizontal RecycleView
         homeHorModelList = new ArrayList<>();
-
         homeHorModelList.add(new HomeHorModel(R.drawable.men_top, "men"));
         homeHorModelList.add(new HomeHorModel(R.drawable.women_top, "women"));
         homeHorModelList.add(new HomeHorModel(R.drawable.kid_top, "kids"));
@@ -48,16 +45,21 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec {
         homeHorizontalRec.setHasFixedSize(true);
         homeHorizontalRec.setNestedScrollingEnabled(false);
 
-        ///vertical RecycleView
         homeVerModelList = new ArrayList<>();
-
         homeVerAdapter = new HomeVerAdapter(getActivity(), homeVerModelList);
         homeVerticalRec.setAdapter(homeVerAdapter);
         homeVerticalRec.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false));
 
+        Button signInButton = root.findViewById(R.id.signupBtn);
+        signInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return root;
-
     }
 
     @Override
@@ -66,8 +68,6 @@ public class HomeFragment extends Fragment implements UpdateVerticalRec {
         homeVerAdapter.notifyDataSetChanged();
         homeVerticalRec.setAdapter(homeVerAdapter);
     }
-
-
 }
 
 

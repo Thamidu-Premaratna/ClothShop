@@ -8,11 +8,6 @@ android:clipToPadding="true"
 android:background="@drawable/loginback"
 tools:context=".LoginActivity">
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 <TextView
     android:id="@+id/signUp"
@@ -156,6 +151,5 @@ tools:context=".LoginActivity">
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.792" />
 
-    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

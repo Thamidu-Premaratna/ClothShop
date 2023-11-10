@@ -31,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.container_Id, new HomeFragment()).commit();
 
         //bottom nav
-
+//
 //        BottomAppBar bottomAppBar = findViewById(R.id.app_bar);
 //        ImageView imgHome = findViewById(R.id.img_home);
 //        TextView txtHome = findViewById(R.id.txt_home);
@@ -104,10 +104,10 @@ public class HomeActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, LoginActivity.class);
 //        startActivity(intent);
 //    }
-//}
     }
 
-
 }
+
+
 
 //IM/2020/022- ended
