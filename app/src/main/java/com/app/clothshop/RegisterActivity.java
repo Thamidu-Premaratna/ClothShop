@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
         //clickable text
         TextView textView = findViewById(R.id.ah_text);
 
-        String text = "Already have an account ->";
+        String text = "Already have an account?";
 
         SpannableString ss = new SpannableString(text);
 
@@ -58,12 +58,12 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void updateDrawState(TextPaint ds) {
                 super.updateDrawState(ds);
-                ds.setColor(Color.RED);
+                ds.setColor(Color.BLACK);
                 ds.setUnderlineText(false);
             }
         };
 
-        ss.setSpan(clickableSpan1, 0, 25, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(clickableSpan1, 0, 23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         textView.setText(ss);
         textView.setMovementMethod(LinkMovementMethod.getInstance());

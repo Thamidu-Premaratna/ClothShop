@@ -200,14 +200,16 @@
                 android:layout_weight="2"/>
 
             <!-- Add product to bag button -->
-            <Button
+            <android.widget.Button
                 android:id="@+id/productViewAddBtn"
                 android:layout_width="wrap_content"
-                android:layout_height="64dp"
+                android:layout_height="53dp"
                 android:layout_weight="2"
                 android:backgroundTint="@color/button_color1"
                 android:fontFamily="sans-serif"
                 android:textSize="16sp"
+                android:background="@drawable/button_bg"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:text="@string/productViewAddBtn"/>
         </LinearLayout>
