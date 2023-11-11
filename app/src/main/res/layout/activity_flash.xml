@@ -18,7 +18,7 @@
         android:adjustViewBounds="true"
         app:srcCompat="@drawable/flashscreen" />
 
-    <TextView
+    <android.widget.TextView
         android:id="@+id/mainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         android:textSize="30sp"
         android:fontFamily="sans-serif"
         android:layout_centerHorizontal="true"/>
-    <TextView
+    <android.widget.TextView
         android:id="@+id/subText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         android:textSize="22sp"
         android:fontFamily="sans-serif"
         android:layout_centerHorizontal="true"/>
-    <Button
+    <android.widget.Button
         android:id="@+id/mainBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,7 +48,9 @@
         android:layout_marginTop="680dp"
         android:paddingVertical="10dp"
         android:paddingHorizontal="40dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
         android:text="@string/flash_slider">
 
-    </Button>
+    </android.widget.Button>
 </RelativeLayout>

@@ -12,34 +12,35 @@
         android:layout_height="match_parent"
         android:weightSum="1">
 
-        <Button
+        <EditText
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableEnd="@drawable/baseline_search_24"
+            android:drawablePadding="10dp"
+            android:hint="@string/search"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="24dp"
+            android:layout_margin="16dp"/>
+
+        <android.widget.Button
             android:id="@+id/signupBtn"
             android:layout_width="148dp"
             android:layout_height="53dp"
-            android:background="@drawable/btn_bgc"
-            android:backgroundTint="#D3B398"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:onClick="signin"
             android:padding="5dp"
             android:text="@string/sign_in"
             android:textAllCaps="false"
             android:textSize="22dp"
             android:textStyle="bold"
-            android:layout_marginLeft="20dp"
-            android:layout_gravity="left"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"/>
-
-        <EditText
-            android:id="@+id/serachbar"
-            android:layout_width="match_parent"
-            android:layout_height="51dp"
-            android:background="@drawable/edit_text_bg"
-            android:drawableLeft="@drawable/search"
-            android:drawablePadding="10dp"
-            android:hint="@string/search"
-            android:paddingStart="10dp"
-            android:textSize="22dp"
-            android:layout_margin="16dp"/>
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_hor_rec"
