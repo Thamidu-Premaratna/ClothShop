@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -47,6 +48,20 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             }
         });
 
+        //back button
+        Button myButton = findViewById(R.id.back_btn);
+
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start the second activity
+                Intent intent = new Intent(ForgotPasswordActivity.this, LoginActivity.class);
+
+                // Start the second activity
+                startActivity(intent);
+            }
+        });
+
     }
     private void ResetPassword(){
         resetBtn.setVisibility(View.INVISIBLE);
@@ -67,9 +82,6 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                         resetBtn.setVisibility(View.VISIBLE);
                     }
                 });
-    }
-    public void fpBack(View view) {
-        startActivity(new Intent(ForgotPasswordActivity.this, LoginActivity.class));
     }
 
 }
