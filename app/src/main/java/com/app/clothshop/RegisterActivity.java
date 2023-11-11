@@ -90,44 +90,40 @@ public class RegisterActivity extends AppCompatActivity {
         String userPassword = password.getText().toString();
 
         if (TextUtils.isEmpty(userName)) {
-            Toast.makeText(this,"Enter Name", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Enter Name", Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (TextUtils.isEmpty(userEmail)) {
-            Toast.makeText(this,"Enter Email Address", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Enter Email Address", Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (TextUtils.isEmpty(userPassword)) {
-            Toast.makeText(this,"Enter Password", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Enter Password", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        if (userPassword.length() < 8){
-            Toast.makeText(this,"Password too short", Toast.LENGTH_SHORT).show();
+        if (userPassword.length() < 8) {
+            Toast.makeText(this, "Password too short", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        auth.createUserWithEmailAndPassword(userEmail,userPassword)
+        auth.createUserWithEmailAndPassword(userEmail, userPassword)
                 .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             Toast.makeText(RegisterActivity.this, "Successfully Register", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(RegisterActivity.this, HomeActivity.class));
-                        }else {
-                            Toast.makeText(RegisterActivity.this, "Registration Failed"+task.getException(), Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(RegisterActivity.this, "Registration Failed" + task.getException(), Toast.LENGTH_SHORT).show();
 
                         }
                     }
                 });
 
     }
-
-//    public void signin(View view) {
-//        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-//    }
 
 }
 //IM/2020/109 - finished

@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -15,11 +14,8 @@ import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
-import android.view.ViewTreeObserver;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
         //clickable text
         TextView textView = findViewById(R.id.fp_text);
 
-        String text = "Forgot your password?";
+        String text = "Forgot your password? ->";
 
         SpannableString ss = new SpannableString(text);
 
@@ -59,12 +55,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void updateDrawState(TextPaint ds) {
                 super.updateDrawState(ds);
-                ds.setColor(Color.BLACK);
+                ds.setColor(Color.RED);
                 ds.setUnderlineText(false);
             }
         };
 
-        ss.setSpan(clickableSpan1, 0, 20, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss.setSpan(clickableSpan1, 0, 24, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         textView.setText(ss);
         textView.setMovementMethod(LinkMovementMethod.getInstance());
@@ -72,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
         //clickable text
         TextView textView1 = findViewById(R.id.ah_text);
 
-        String text1 = "Don't have an account?";
+        String text1 = "Don't have an account ->";
 
         SpannableString ss1 = new SpannableString(text1);
 
@@ -86,12 +82,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void updateDrawState(TextPaint ds) {
                 super.updateDrawState(ds);
-                ds.setColor(Color.BLACK);
+                ds.setColor(Color.RED);
                 ds.setUnderlineText(false);
             }
         };
 
-        ss1.setSpan(clickableSpan2, 0, 21, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ss1.setSpan(clickableSpan2, 0, 24, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         textView1.setText(ss1);
         textView1.setMovementMethod(LinkMovementMethod.getInstance());
